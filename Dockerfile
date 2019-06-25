@@ -10,7 +10,8 @@ procps \
 vim \
 vsftpd ftp \
 deluged \
-deluge-web 
+deluge-web \
+sudo
 
 RUN useradd -m ftpuser; 
 RUN (echo 'pass'; echo 'pass') | passwd ftpuser
