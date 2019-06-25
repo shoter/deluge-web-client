@@ -1,1 +1,1 @@
-docker build -t deluge-web-client . 
+docker build  -t deluge-web-client . 
