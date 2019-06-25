@@ -17,10 +17,6 @@ RUN useradd -m ftpuser;
 RUN (echo 'pass'; echo 'pass') | passwd ftpuser
 
 RUN mv /etc/vsftpd/vsftpd.conf /etc/vsftpd.conf
-RUN mkdir /home/ftpuser/downloading
-RUN mkdir /home/ftpuser/completed
-RUN mkdir /home/ftpuser/backups
-RUN mkdir /home/ftpuser/autoadd
 
 EXPOSE 8112 20 21
 
