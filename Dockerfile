@@ -3,9 +3,6 @@ FROM debian:stretch
 COPY ./user_list /etc/vsftpd/user_list
 COPY ./vsftpd.conf /etc/vsftpd/vsftpd.conf
 
-COPY ./deluged.service /etc/systemd/system/deluged.service 
-COPY ./deluged.service.d /etc/systemd/system/deluged.service.d
-
 RUN \
 apt-get update && \
 apt-get install -y \
